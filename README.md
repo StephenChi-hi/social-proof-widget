@@ -1,6 +1,3 @@
-Here’s a concise, professional, public description you can put on your GitHub repo for `social-proof-widget`:
-
----
 
 # **Social Proof Widget**
 
