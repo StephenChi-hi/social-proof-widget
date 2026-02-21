@@ -1,0 +1,44 @@
+{
+  "name": "social-proof-widget",
+  "version": "1.0.0",
+  "description": "Show your users that your website is active and trusted.",
+  "main": "./dist/SocialProof.js",
+  "module": "./dist/SocialProof.mjs",
+  "types": "./dist/SocialProof.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/SocialProof.d.ts",
+      "import": "./dist/SocialProof.mjs",
+      "require": "./dist/SocialProof.js"
+    },
+    "./react": {
+      "types": "./dist/SocialProof.d.ts",
+      "import": "./dist/SocialProof.mjs",
+      "require": "./dist/SocialProof.js"
+    },
+    "./vanilla": {
+      "types": "./dist/social-proof.d.ts",
+      "import": "./dist/social-proof.mjs",
+      "require": "./dist/social-proof.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/react/SocialProof.tsx src/vanilla/social-proof.ts --format cjs,esm,iife --dts",
+    "watch": "tsup src/react/SocialProof.tsx src/vanilla/social-proof.ts --format cjs,esm,iife --dts --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenChi-hi/social-proof-widget.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
